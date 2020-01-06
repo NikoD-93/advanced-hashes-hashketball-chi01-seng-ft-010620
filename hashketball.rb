@@ -118,6 +118,12 @@ def game_hash
           }
 end
 
+# Duke solution 
+# .map builds an output array and sets it to empty. 
+# nested_players = game_hash.values.map do |team|
+# team[:players]
+# end
+# nested_players.flatten 
 
 
 
@@ -128,14 +134,12 @@ def num_points_scored(name)
       value.each { |player|
         if player[:player_name] == name
          return player[:points]
-      
-                  
-              end
-              }
-          end
     
+         end
         }
-    } 
+      end
+     }
+  } 
  
   
 
